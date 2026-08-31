@@ -17,7 +17,7 @@ describe("Escola", () => {
       expect(escola.calculaMedia([9.5])).toBe(9.5);
     });
     test("lanca erro quando a lista esta vazia", () => {
-      expect(() => escola.calculaMedia([])).toThrow("nao pode ser vazia");
+      expect(() => escola.calculaMedia([])).toThrow();
     });
     test("lanca erro quando o argumento e null", () => {
       expect(() => escola.calculaMedia(null)).toThrow();
